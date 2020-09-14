@@ -1,4 +1,4 @@
-public class MovieObjects {
+public class Movie {
 
     private static String titleType;
     private String primaryTitle;
@@ -7,7 +7,7 @@ public class MovieObjects {
     private String runTimeMins;
     private String genres;
 
-    public MovieObjects(){
+    public Movie(){
         this.titleType = "None";
         this.primaryTitle = "None";
         this.originalTitle ="None";
@@ -16,10 +16,10 @@ public class MovieObjects {
         this.genres = "None";
     }
 
-    public MovieObjects(String titleType, String primaryTitle, String origionalTitle, String startYear, String runTimeMins, String genres){
+    public Movie(String titleType, String primaryTitle, String originalTitle, String startYear, String runTimeMins, String genres){
         this.titleType = titleType;
         this.primaryTitle = primaryTitle;
-        this.originalTitle = origionalTitle;
+        this.originalTitle = originalTitle;
         this.startYear = startYear;
         this.runTimeMins = runTimeMins;
         this.genres = genres;
