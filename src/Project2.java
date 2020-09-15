@@ -61,7 +61,7 @@ public class Project2 {
             FileOutputStream Titles = new FileOutputStream("Titles.txt");
             PrintWriter fileWriter = new PrintWriter(Titles);
 
-            for (int j=0; j<801; j++){
+            for (int j=1; j<801; j++){
                 String title = movieArray[j].getPrimaryTitle();
                 fileWriter.println(title);
             } fileWriter.close();
@@ -69,7 +69,7 @@ public class Project2 {
             FileOutputStream Movies2005through2020 = new FileOutputStream("Movies2005-2020.txt");
             fileWriter = new PrintWriter(Movies2005through2020);
 
-            for (int j=0; j<801; j++) {
+            for (int j=1; j<801; j++) {
                 String MY = movieArray[j].getStartYear();
 
                     if (MY.equals("2005")||MY.equals("2006")||MY.equals("2007")||MY.equals("2008")||MY.equals("2009")||MY.equals("2010")||
@@ -86,7 +86,7 @@ public class Project2 {
             FileOutputStream Documentary = new FileOutputStream("Documentary.txt");
             fileWriter = new PrintWriter(Documentary);
 
-            for (int j=0; j<801; j++){
+            for (int j=1; j<801; j++){
                 String Doc = movieArray[j].getGenres();
 
                 if(Doc.contains("Documentary")){
@@ -101,7 +101,7 @@ public class Project2 {
             FileOutputStream titleandyear = new FileOutputStream("Title-Year.txt");
             fileWriter = new PrintWriter(titleandyear);
 
-            for (int j=0; j<801; j++){
+            for (int j=1; j<801; j++){
                 String title = movieArray[j].getPrimaryTitle();
                 String year = movieArray[j].getStartYear();
 
